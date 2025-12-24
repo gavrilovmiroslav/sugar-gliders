@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_wfsm",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_wfsm",
+  "parent":{
+    "name":"Cat01",
+    "path":"folders/Characters/Cat01.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
