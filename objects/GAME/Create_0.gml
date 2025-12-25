@@ -76,7 +76,7 @@ part_system_automatic_draw(		partSysFront,false);
 //General purpose
 ptGeneralPurpose = part_type_create()
 part_type_sprite(		ptGeneralPurpose,maskPart,0,0,0)
-part_type_colour1(		ptGeneralPurpose,c_white)
+part_type_colour1(		ptGeneralPurpose,c_red)
 part_type_alpha3(		ptGeneralPurpose,1,3,0)
 part_type_speed(		ptGeneralPurpose,2,3,-.25,0);
 part_type_direction(	ptGeneralPurpose,0,359,0,0);
@@ -87,7 +87,7 @@ part_type_size(			ptGeneralPurpose,1.0,2.0,-.1,0)
 //Loose ground
 ptLooseGround = part_type_create()
 part_type_sprite(		ptLooseGround,maskPart,0,0,0);
-part_type_colour1(		ptLooseGround,c_white);
+part_type_colour1(		ptLooseGround,c_red);
 part_type_alpha3(		ptLooseGround,1,3,0);
 part_type_speed(		ptLooseGround,3,4,-.1,0);
 part_type_direction(	ptLooseGround,30,150,0,0);
@@ -99,7 +99,7 @@ part_type_size(			ptLooseGround,.5,1,-.02,0);
 //Loose ground high
 ptLooseGroundHigh = part_type_create()
 part_type_sprite(		ptLooseGroundHigh,maskPart,0,0,0);
-part_type_colour1(		ptLooseGroundHigh,c_white);
+part_type_colour1(		ptLooseGroundHigh,c_red);
 part_type_alpha3(		ptLooseGroundHigh,1,3,0);
 part_type_speed(		ptLooseGroundHigh,4,6,-.1,0);
 part_type_direction(	ptLooseGroundHigh,30,150,0,0);

@@ -1,8 +1,8 @@
 //////////////////////////////////////
 //DRAW CRATE//////////////////////////
 //////////////////////////////////////
-draw_sprite_ext(maskMiddleCenter,0,x+xtrans,y+ytrans,1,1,drot,c_dkbrown32,1);
 
+draw_self()
 //Draw tracejtory if being held
 
 switch (grabbed)

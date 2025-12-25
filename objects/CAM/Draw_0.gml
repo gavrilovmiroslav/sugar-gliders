@@ -1,3 +1,4 @@
+
 if GAME.go {
 	part_system_update(GAME.partSysReg);
 }

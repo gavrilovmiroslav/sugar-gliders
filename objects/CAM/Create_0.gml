@@ -6,7 +6,7 @@ xs		= x;			//X position to look at
 ys		= y;			//Y position to look at
 tar		= objPlayer;	//Target to follow
 
-type	= 2;			//Camera type
+type	= 1;			//Camera type
 						// 0 = Static
 						// 1 = Chase Player
 						// 2 = Predict player hsp
