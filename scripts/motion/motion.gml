@@ -182,6 +182,14 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	
 			if (grabbedledge != noone) {
 				onledge = true;
+				if grabbedledge.x > x
+				{
+					flip = -1;
+				}
+				else
+				{
+					flip = 1;
+				}
 				
 				vsp = 0;
 				y = grabbedledge.y+hh;

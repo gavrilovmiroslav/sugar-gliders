@@ -4,7 +4,7 @@ var i = 0;
 
 repeat(image_xscale) {
 
-draw_sprite_ext(maskSpike,0,x+(i*36),y,1,1,0,c_white,1);
+draw_sprite_ext(maskSpike,0,x+(i*36),y,1,1,image_angle,c_white,1);
 i += 1;
 
 }
