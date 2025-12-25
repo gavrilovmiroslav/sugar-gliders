@@ -1,4 +1,6 @@
 event_inherited();
 
-
-y = y - 0.00001 * delta_time;
+if (!objPlayer.cheating)
+{
+	y = y - 0.00001 * delta_time;
+}
