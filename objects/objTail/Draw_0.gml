@@ -24,7 +24,7 @@ if (owner != noone)
 	else if (owner.ex_state == states.wall)
 	{
 		sprite_index = anim_wall;
-		x = -12 * owner.h
+		x = 1 * owner.h
 		y = -10
 	}
 	else if (owner.ex_state == states.fall)

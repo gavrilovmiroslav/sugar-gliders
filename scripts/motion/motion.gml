@@ -515,7 +515,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	if (rightblock != noone) && (rightkey) && (free) {
 		vsp = min(vsp,2);
 		rot = 15;
-		if ((upkeypress || bufjump > 0) && CWJ) {
+		/*if ((upkeypress || bufjump > 0) && CWJ) {
 			vsp		= jmpspd;
 			hsp		= -maxspd;
 			rtimeout= 11;
@@ -524,7 +524,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 			bufjump = 0;
 			vrelease = 0;
 			forceuh = 20;
-		}
+		}*/
 		slide	= 1;
 		flip	= -1;
 		if choose(0,0,0,1) {
@@ -536,7 +536,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	if (leftblock != noone) && (leftkey) && (free) {
 		vsp = min(vsp,2);
 		rot = -15;
-		if ((upkeypress || bufjump > 0) && CWJ) {
+		/*if ((upkeypress || bufjump > 0) && CWJ) {
 			vsp		= jmpspd;
 			hsp		= maxspd;
 			ltimeout= 11;
@@ -545,7 +545,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 			bufjump = 0;
 			vrelease = 0;
 			forceuh = 20;
-		}
+		}*/
 		slide	= 1;
 		flip	= 1;
 		if choose(0,0,0,1) {
