@@ -143,8 +143,23 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		show_debug_message(water_timer);
 		if (water_timer >= water_time_limit * 1000000)
 		{
-			global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
-			room_restart();
+			with objTail {
+				var childrenSize = ds_list_size(children);
+				if (childrenSize > 0)
+				{
+					var child = children[| childrenSize - 1]
+					instance_destroy(child)
+					ds_list_delete(children, childrenSize - 1)
+					objPlayer.DJA = childrenSize - 1
+					global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);
+				}
+				else
+				{
+					global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
+					room_restart();	
+				}
+			}
+			water_timer = 0;
 		}
 		
 	
