@@ -10,14 +10,30 @@ if (jumpySpike && pokingHeight < height)
 	
 	if (playerApproached == false) return;
 	
-	if (pokingHeight + spikeSpeed < height)
+	if (directionEnum == 0 || directionEnum == 1) // up/down
 	{
-		y = y - spikeSpeed;
-		pokingHeight = pokingHeight + spikeSpeed;
+		if (pokingHeight + abs(spikeSpeed) < height)
+		{
+			y = y - spikeSpeed;
+			pokingHeight = pokingHeight + abs(spikeSpeed);
+		}
+		else
+		{
+			y = y + (height - pokingHeight) * sign(spikeSpeed);
+			pokingHeight = height;
+		}
 	}
-	else
+	else if (directionEnum == 2 || directionEnum == 3) // left/right
 	{
-		y = y - height + pokingHeight;
-		pokingHeight = height;
+		if (pokingHeight + abs(spikeSpeed) < width)
+		{
+			x = x + spikeSpeed;
+			pokingHeight = pokingHeight + abs(spikeSpeed);
+		}
+		else
+		{
+			x = x + (width - pokingHeight) * sign(spikeSpeed);
+			pokingHeight = width;
+		}
 	}
 }
