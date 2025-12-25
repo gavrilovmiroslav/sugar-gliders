@@ -1,0 +1,1 @@
+text = "Green sticky goop makes it hard to move and jump!";

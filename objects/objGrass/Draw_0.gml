@@ -1,0 +1,1 @@
+draw_sprite_pos(sprite,img,x-36+dhfinal+(sin(wobblen+1)*12*hscale),y-72+dvfinal+(sin(wobblen+2)*12*vscale),x+36+dhfinal+(sin(wobblen+3)*12*hscale),y-72+dvfinal+(sin(wobblen+2)*12*vscale),x+36,y-0,x-36,y-0,1)

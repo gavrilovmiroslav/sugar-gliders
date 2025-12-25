@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"motion_basic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"motion_basic",
+  "parent":{
+    "name":"deprecated",
+    "path":"folders/Scripts/deprecated.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

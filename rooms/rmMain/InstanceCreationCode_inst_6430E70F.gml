@@ -1,0 +1,1 @@
+text = "Welcome! Default controls:\nArrow keys + X.";

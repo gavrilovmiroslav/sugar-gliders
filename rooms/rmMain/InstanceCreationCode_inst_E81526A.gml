@@ -1,0 +1,1 @@
+text = "You can use R to restart the game if you fall off this test area!";

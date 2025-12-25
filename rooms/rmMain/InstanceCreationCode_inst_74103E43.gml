@@ -1,0 +1,1 @@
+text = "Use the action key [Default: X] to pick up and throw crates.";

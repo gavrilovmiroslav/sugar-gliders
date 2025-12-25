@@ -1,0 +1,1 @@
+text = "Hold jump after touching the spring to go higher. Hold down on the platform to fall through!";

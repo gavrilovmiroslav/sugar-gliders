@@ -1,0 +1,1 @@
+text = "Use the left mouse button to spawn frag objects. They're super efficient!";

@@ -1,0 +1,8 @@
+//////////////////////////////////////
+//PAUSING/////////////////////////////
+//////////////////////////////////////
+go = !keyboard_check(vk_space)
+
+//Animation fluff
+if (go) {image_angle += 3;}
+if (go) {physics_pause_enable(0);} else {physics_pause_enable(1);}
