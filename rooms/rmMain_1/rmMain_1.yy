@@ -40,6 +40,7 @@
     {"name":"inst_589C641E","path":"rooms/rmMain_1/rmMain_1.yy",},
     {"name":"inst_493BED01","path":"rooms/rmMain_1/rmMain_1.yy",},
     {"name":"inst_4074C9E7","path":"rooms/rmMain_1/rmMain_1.yy",},
+    {"name":"inst_452E2D3C","path":"rooms/rmMain_1/rmMain_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -94,6 +95,7 @@
         {"$GMRInstance":"v4","%Name":"inst_4A25A6A2","colour":4294935252,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4A25A6A2","objectId":{"name":"objLedgeGrabPoint","path":"objects/objLedgeGrabPoint/objLedgeGrabPoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.625,"scaleY":1.9305556,"x":1165.0,"y":391.22906,},
         {"$GMRInstance":"v4","%Name":"inst_589C641E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_589C641E","objectId":{"name":"objSugar","path":"objects/objSugar/objSugar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.670792,"scaleY":1.670792,"x":400.6213,"y":561.0,},
         {"$GMRInstance":"v4","%Name":"inst_493BED01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_493BED01","objectId":{"name":"objSugar","path":"objects/objSugar/objSugar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.670792,"scaleY":1.670792,"x":149.37871,"y":560.9628,},
+        {"$GMRInstance":"v4","%Name":"inst_452E2D3C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_452E2D3C","objectId":{"name":"objSugar","path":"objects/objSugar/objSugar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.670792,"scaleY":1.670792,"x":72.37871,"y":275.7662,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_behind","depth":200,"effectEnabled":true,"effectType":null,"gridX":36,"gridY":36,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_behind","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":300,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
