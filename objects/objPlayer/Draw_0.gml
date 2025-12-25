@@ -6,7 +6,7 @@ ex_mat = _mat
 matrix_set(matrix_world,_mat);								 //Set the matrix as the world matrix
 
 h = flip
-if (slide != 0) h = -h
+if (slide != 0 || onledge) h = -h
 
 // 0 = Idle
 // 1 = Moving left
@@ -31,7 +31,7 @@ else
 	image_index = idx
 }
 
-if (slide != 0 || onladder || onrope) {
+if (slide != 0 || onladder || onrope || onledge) {
 	ex_state = states.wall;
 	sprite_index = anim_wall;
 }
