@@ -4,6 +4,7 @@ splat_sounds = [glider_splat, Splat2, Splat3];
 whine_sound = [baby_cry, baby_moan, puppy_whine];
 bg_music = [jump_higher_run_faster, jump_and_run___tropics];
 crunch_sounds = [crunch, bone_crunch];
+death_sounds = [Death_6];
 
 
 
