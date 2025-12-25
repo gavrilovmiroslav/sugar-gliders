@@ -97,6 +97,7 @@
     {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},},
     {"id":{"name":"baby_cry","path":"sounds/baby_cry/baby_cry.yy",},},
     {"id":{"name":"baby_moan","path":"sounds/baby_moan/baby_moan.yy",},},
+    {"id":{"name":"bone_crunch","path":"sounds/bone_crunch/bone_crunch.yy",},},
     {"id":{"name":"crunch","path":"sounds/crunch/crunch.yy",},},
     {"id":{"name":"glider_splat","path":"sounds/glider_splat/glider_splat.yy",},},
     {"id":{"name":"jump_and_run___tropics","path":"sounds/jump_and_run___tropics/jump_and_run___tropics.yy",},},
