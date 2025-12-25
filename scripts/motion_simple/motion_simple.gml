@@ -66,7 +66,7 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 	
 			if vsp = vspclamp {
 			xstretch = 3; ystretch = .2;
-			} else {
+			} else { 
 			xstretch = 2; ystretch = .5;
 			}
 			rot		= 0;
@@ -93,7 +93,7 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 		bufjump = 0;
 		djump  -= 1;
 	
-		part_type_colour1(GAME.ptGeneralPurpose,c_white)
+		part_type_colour1(GAME.ptGeneralPurpose,c_red)
 		repeat(6) {part_particles_create(GAME.partSysReg,x+irandom_range(-width,width),y,GAME.ptGeneralPurpose,1)}
 		}
 #endregion
@@ -106,14 +106,13 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 
 	if collision_line(x-hw,y+hh,x+hw-1,y+hh,parSolid,0,0) {
 	
-		if vsp > 0 {
-		
+		if vsp > 0 {			
 			part_type_colour1(GAME.ptLooseGroundHigh,floorcolor);
 	        part_type_direction(GAME.ptLooseGroundHigh,40,90,0,0);
 	        repeat(3) {part_particles_create(GAME.partSysReg,x+irandom_range(-hw,hw),y+(hh*1.5),GAME.ptLooseGroundHigh,1);}
 	        part_type_direction(GAME.ptLooseGroundHigh,90,150,0,0);
 	        repeat(3) {part_particles_create(GAME.partSysReg,x+irandom_range(-hw,hw),y+(hh*1.5),GAME.ptLooseGroundHigh,1);}
-	
+
 			if vsp = vspclamp {
 			xstretch = 3; ystretch = .2;
 			} else {
@@ -249,6 +248,10 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 					col = 0;
 					break;
 				}
+				else
+				{
+					hit = 1;
+				}
 			
 				i += 1;
 				}
@@ -267,6 +270,10 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 					y -= i;
 					col = 0;
 					break;
+				}
+				else
+				{
+					hit = 1;
 				}
 			
 				i += 1;
@@ -324,5 +331,13 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 	}
 #endregion
 
+	if (hit) 
+	{
+		audio_stop_sound(whine_sound_id);
+		global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);
+		repeat(10) {part_particles_create(GAME.partSysReg,x+irandom_range(-hw,hw),y+(hh*1.5),GAME.ptLooseGroundHigh,1);}
 
+		instance_create_depth(x, y, 0, objLedgeGrabPoint)
+		instance_destroy(self)
+	}
 }

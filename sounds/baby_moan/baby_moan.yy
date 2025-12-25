@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.08,
+  "duration":0.8940136,
   "exportDir":"",
   "name":"baby_moan",
   "parent":{

@@ -22,7 +22,7 @@ h			= 1		     //Horizontal orientation
 
 maxspd		= 5;		//Max horizontal speed
 accspd		= 2;		//Movement acceleration speed
-jmpspd		=-12;		//Jumping speed
+jmpspd		=-13;		//Jumping speed
 grvspd		= 1;		//Vertical speed accelaration (also known as gravity)
 airfrc		= 1;		//Friction (speed that you slow down each frame while not pressing a key) in the air
 gndfrc		= 2;		//Friction (speed that you slow down each frame while not pressing a key) on the ground
@@ -85,6 +85,8 @@ iaccspd		= accspd;
 imaxspd		= maxspd;
 ijmpspd		= jmpspd;
 #endregion
+
+tail = noone;
 
 //////////////////////////////////////
 //VISUAL VARIABLES////////////////////

@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 owner = instance_nearest(x, y, objPlayer)
+
 image_xscale = 2
 image_yscale = 2
 image_speed = 0
+
+children = ds_list_create()

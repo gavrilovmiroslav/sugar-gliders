@@ -42,4 +42,7 @@ if (owner != noone)
 		owner.drot * 0.1,
 		c_white, 1);
 	matrix_set(matrix_world, mat_ident);
+	x = owner.x + x
+	y = owner.y + y
+	image_xscale = owner.image_xscale
 }
