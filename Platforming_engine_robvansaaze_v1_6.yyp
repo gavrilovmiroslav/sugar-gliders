@@ -78,6 +78,7 @@
     {"id":{"name":"objLedgeGrabPoint","path":"objects/objLedgeGrabPoint/objLedgeGrabPoint.yy",},},
     {"id":{"name":"objMoveBlock","path":"objects/objMoveBlock/objMoveBlock.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"objRisingWater","path":"objects/objRisingWater/objRisingWater.yy",},},
     {"id":{"name":"objRopeBlock","path":"objects/objRopeBlock/objRopeBlock.yy",},},
     {"id":{"name":"objRopePart","path":"objects/objRopePart/objRopePart.yy",},},
     {"id":{"name":"objSlope","path":"objects/objSlope/objSlope.yy",},},
