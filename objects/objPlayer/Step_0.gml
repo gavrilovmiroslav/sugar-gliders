@@ -103,7 +103,7 @@ ltimeout	-= 1;
 rtimeout	-= 1; 
 bufjump		-= 1;
 onfloor		-= 1;
-show_debug_message(onfloor)
+
 motion(	keyboard_check(GAME.keyright),
 		keyboard_check(GAME.keyleft) ,
 		keyboard_check(GAME.keyup)   ,

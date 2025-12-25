@@ -161,6 +161,12 @@ case 0:	//Not grabbed
 					0 ,
 					0 );
 					
+	if (place_meeting(x + hsp, y + vsp, objSolid) && flying)
+	{
+		audio_stop_sound(whine_sound_id);
+		global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);	
+	}
+					
 break;
 
 case 1: //Grabbed
@@ -223,6 +229,10 @@ case 1:
 		ytrans				= 0;
 		x					= round(x);
 		y					= round(y);
+		
+		//play whine sound
+		whine_sound_id = global.soundDB.PlayRandomSound(global.soundDB.whine_sound);
+		flying = 1;
 	}
 
 	
