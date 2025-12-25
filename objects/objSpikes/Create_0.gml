@@ -1,3 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-image_blend = c_white;
+if (jumpySpike == true)
+{
+	height = sprite_get_height(sprite_index);
+	y = y + height;
+	pokingHeight = 0;
+	spikeSpeed = 1;
+	playerApproached = false;
+}
