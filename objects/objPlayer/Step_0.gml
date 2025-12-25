@@ -113,7 +113,8 @@ motion(	keyboard_check(GAME.keyright),
 		keyboard_check_pressed(GAME.keyleft) ,
 		keyboard_check_pressed(GAME.keyup)   ,
 		keyboard_check_pressed(GAME.keydown) ,
-		keyboard_check_pressed(GAME.keyact1)
+		keyboard_check_pressed(GAME.keyact1) ,
+		keyboard_check_pressed(GAME.keyact2) 
 		);
 		
 #endregion		

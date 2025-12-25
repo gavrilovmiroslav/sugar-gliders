@@ -10,7 +10,7 @@
 ///@param upkeypress
 ///@param downkeypress
 ///@param actionkey1press
-function motion(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9) {
+function motion(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10) {
 
 	var rightkey		= argument0,
 		leftkey			= argument1,
@@ -22,12 +22,45 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		leftkeypress	= argument6,
 		upkeypress		= argument7,
 		downkeypress	= argument8,
-		actionkey1press = argument9;
+		actionkey1press = argument9,
+		
+		actionkeycheat  = argument10;
 
 	//////////////////////////////////////
 	// WATER /////////////////////////////
 	//////////////////////////////////////
 #region
+
+	if (cheating)
+	{
+		if (actionkeycheat)
+		{
+			cheating = false;
+		}
+		var cheatSpeed = 5;
+		if (rightkey)
+		{
+			x = x + cheatSpeed;
+		}
+		else if (leftkey)
+		{
+			x = x - cheatSpeed;
+		}
+		else if (upkey)
+		{
+			y = y - cheatSpeed;
+		}
+		else if (downkey)
+		{
+			y = y + cheatSpeed;
+		}
+		return;
+	}
+	else
+	{
+		cheating = actionkeycheat;
+	}
+
 	if (inwater = 0) && instance_position(x,y+hh-1,objWater) {
 		inwater = instance_position(x,y+hh-1,objWater);
 		grvspd = .5
