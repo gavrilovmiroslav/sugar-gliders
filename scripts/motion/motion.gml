@@ -36,6 +36,8 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		{
 			cheating = false;
 		}
+		vsp = 0;
+		hsp = 0;
 		var cheatSpeed = 5;
 		if (rightkey)
 		{
@@ -141,8 +143,11 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 
 	if (inwater) {
 		
-		water_timer += delta_time;
-		show_debug_message(water_timer);
+		if (cheating)
+		{
+			water_timer += delta_time;
+			show_debug_message(water_timer);
+		}
 		if (water_timer >= water_time_limit * 1000000)
 		{
 			with objTail {
