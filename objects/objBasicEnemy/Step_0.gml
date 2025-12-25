@@ -48,6 +48,7 @@ if (floorblock != noone) {
 				xstretch= .2;
 				ystretch= 3;
 				invincible = 60;
+				show_debug_message("SPIKE DEATH");
 				global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
 				room_restart()
 			}			
