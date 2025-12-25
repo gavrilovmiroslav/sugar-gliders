@@ -21,6 +21,7 @@ grvspd		= 2;		//Vertical speed accelaration (also known as gravity)
 airfrc		= .5;		//Friction (speed that you slow down each frame while not pressing a key) in the air
 gndfrc		= 2;		//Friction (speed that you slow down each frame while not pressing a key) on the ground
 maxslp		= 1;		//Highest slope you can climb in pixels.
+flying		= 0;
 
 vspclamp	= 24;		//Maximum vertical speed
 hspclamp	= 24;		//Maximum horizontal speed

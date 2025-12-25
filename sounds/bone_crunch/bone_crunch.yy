@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"bone_crunch",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.1037868,
+  "exportDir":"",
+  "name":"bone_crunch",
+  "parent":{
+    "name":"Crunch",
+    "path":"folders/Sounds/Crunch.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bone_crunch.wav",
+  "volume":1.0,
+}

@@ -103,7 +103,7 @@ ltimeout	-= 1;
 rtimeout	-= 1; 
 bufjump		-= 1;
 onfloor		-= 1;
-show_debug_message(onfloor)
+
 motion(	keyboard_check(GAME.keyright),
 		keyboard_check(GAME.keyleft) ,
 		keyboard_check(GAME.keyup)   ,
@@ -113,7 +113,8 @@ motion(	keyboard_check(GAME.keyright),
 		keyboard_check_pressed(GAME.keyleft) ,
 		keyboard_check_pressed(GAME.keyup)   ,
 		keyboard_check_pressed(GAME.keydown) ,
-		keyboard_check_pressed(GAME.keyact1)
+		keyboard_check_pressed(GAME.keyact1) ,
+		keyboard_check_pressed(GAME.keyact2) 
 		);
 		
 #endregion		

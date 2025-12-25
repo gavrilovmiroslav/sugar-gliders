@@ -161,6 +161,12 @@ case 0:	//Not grabbed
 					0 ,
 					0 );
 					
+	if (place_meeting(x + hsp, y + vsp, objSolid) && flying)
+	{
+		audio_stop_sound(whine_sound_id);
+		global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);	
+	}
+					
 break;
 
 case 1: //Grabbed
@@ -169,7 +175,7 @@ case 1: //Grabbed
 	ytrans		-= (ytrans)*.2;
 	xadd		-= (xadd-(objPlayer.flip*24))*.2;
 	x			 = objPlayer.x+xadd;
-	y			 = objPlayer.y;
+	y			 = objPlayer.y - 30;
 
 break;
 
@@ -210,19 +216,23 @@ break;
 
 case 1:
 	
-	if keyboard_check_pressed(GAME.keyact1) && place_empty(x,y,parSolid){
+	if keyboard_check_pressed(GAME.keyact1){
 		idd.docols			= 1;
 		idd.image_xscale	= 1;
 		grabbed				= 0;
 		objCrate.grabcd		= 6;
-		vsp					= -16;
-		hsp					= (8+abs(objPlayer.hsp))*objPlayer.flip;
+		vsp					= -2;
+		hsp					= (32+abs(objPlayer.hsp))*objPlayer.flip;
 		objPlayer.grabobject= 0;
 		active				= 1;
 		xtrans				= 0;
 		ytrans				= 0;
 		x					= round(x);
 		y					= round(y);
+		
+		//play whine sound
+		whine_sound_id = global.soundDB.PlayRandomSound(global.soundDB.whine_sound);
+		flying = 1;
 	}
 
 	
