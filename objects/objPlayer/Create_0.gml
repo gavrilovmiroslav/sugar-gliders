@@ -117,3 +117,7 @@ enum states {
 }
 
 ex_state = states.idle
+
+//WATER DEATH VARIABLES
+water_timer = 0;
+water_time_limit = 3; //seconds

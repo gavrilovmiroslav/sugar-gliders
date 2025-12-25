@@ -138,6 +138,14 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	}
 
 	if (inwater) {
+		
+		water_timer += delta_time;
+		if (water_timer >= water_time_limit * 1000000)
+		{
+			global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
+			room_restart();
+		}
+		
 	
 		if hsp != 0 && inwater.shallows && !free {
 		
