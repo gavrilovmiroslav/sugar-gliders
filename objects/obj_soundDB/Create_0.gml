@@ -12,8 +12,9 @@ death_sounds = [Death_6];
 randomise();
 
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
+#macro DEFAULT_VOLUME 1
 
-PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = 1)
+PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = DEFAULT_VOLUME)
 {
 	arrLength = array_length(soundArray);
 	if (arrLength <= 0)

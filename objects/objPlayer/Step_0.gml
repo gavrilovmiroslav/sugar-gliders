@@ -43,6 +43,7 @@ if (floorblock != noone) {
 			break;
 		case c_white:
 			//Spikes (replace this code with code for hurting the player)
+			if (objPlayer.cheating) break;
 			if (!collision_line(x-hw,y-hh-1+jmpspd,x+hw-1,y-hh-1+jmpspd,parSolid,0,0)) && (invincible = 0) {
 				vsp = -16;
 				y += -1;
@@ -167,3 +168,12 @@ if (hsp > 0  && vsp != 0) {animstate = 5;}
 
 }
 
+
+//////////////////////////////////////
+//DEBUG///////////////////////////////
+//////////////////////////////////////
+if (lastState != state)
+{
+	lastState = state;
+	show_debug_message(state);
+}
