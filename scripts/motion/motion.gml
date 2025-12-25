@@ -181,19 +181,23 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 			}
 	
 			if (grabbedledge != noone) {
+				onledge = true;
+				
 				vsp = 0;
 				y = grabbedledge.y+hh;
 				if (x < grabbedledge.x) {rot = 15;} else {rot = -15;};
 		
 				if (upkeypress) {
-				vsp = jmpspd;
-				xstretch= .5; 
-				ystretch= 2;
-				vrelease = 0;
+					vsp = jmpspd;
+					xstretch= .5; 
+					ystretch= 2;
+					vrelease = 0;
+					onledge = false;
 				}
 		
 				if (downkeypress) {
-				y += 4;
+					y += 4;
+					onledge = false;
 				}
 		
 				exit;

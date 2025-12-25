@@ -58,6 +58,8 @@ lastladder	= 0;		//The last ladder we touched
 laddercd	= 0;		//Cooldown before we can grab the last ladder
 ladderspd	= 8;		//Maximum speed the player can climb on ladders
 
+onledge     = false;    //Whether we are on a ledge
+
 inwater		= 0;		//Whether the player is in water
 onslope		= 0;		//Whether the player is on a slope
 grabobject  = 0;		//Whether the player has grabbed an object (e.g. a crate)
