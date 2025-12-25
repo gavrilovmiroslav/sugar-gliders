@@ -13,7 +13,7 @@ var i = 0;
 	}
 */
 
-draw_set_colour(c_ltblue32)
+draw_set_colour(c_dkblue32)
 draw_set_alpha(.5);
 draw_primitive_begin(pr_trianglestrip);
 
