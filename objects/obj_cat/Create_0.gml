@@ -108,6 +108,8 @@ _jump_state.on_enter = function()
 	show_debug_message("JUMP");
 	sprite_index = spr_jump;
 	vsp = vsp_jump;
+	
+	global.soundDB.PlayRandomSound(global.soundDB.whine_sound);
 }
 
 _jump_state.on_update = function()

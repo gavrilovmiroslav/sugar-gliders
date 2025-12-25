@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"baby_cry",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.38154194,
+  "exportDir":"",
+  "name":"baby_cry",
+  "parent":{
+    "name":"Whines",
+    "path":"folders/Sounds/Whines.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"baby_cry.wav",
+  "volume":1.0,
+}
