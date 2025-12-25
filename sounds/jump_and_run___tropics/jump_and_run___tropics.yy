@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"jump_and_run___tropics",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":31.314377,
+  "exportDir":"",
+  "name":"jump_and_run___tropics",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"jump_and_run___tropics.wav",
+  "volume":1.0,
+}

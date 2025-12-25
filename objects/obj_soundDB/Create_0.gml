@@ -2,7 +2,7 @@ global.soundDB = id;
 
 splat_sounds = [glider_splat, Splat2, Splat3];
 whine_sound = [baby_cry, baby_moan, puppy_whine];
-bg_music = [jump_higher_run_faster];
+bg_music = [jump_higher_run_faster, jump_and_run___tropics];
 
 
 
@@ -24,4 +24,4 @@ PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = 1)
 	return audio_play_sound(soundArray[randomIndex], priority, loop, gain);
 }
 
-//global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
+global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
