@@ -13,7 +13,7 @@ width		= 36;		//Width of hitbox (EVEN VALUES ONLY)
 height		= 36;		//Height of hitbox (EVEN VALUES ONLY)
 hw			= (width/2);//Half the hitbox width
 hh			= (height/2);//Half the hitbox height
-
+hit = 0
 maxspd		= 0;		//Max horizontal speed
 accspd		= 0;		//Movement acceleration speed
 jmpspd		= 0;		//Jumping speed
