@@ -52,6 +52,8 @@ if (floorblock != noone) {
 				ystretch= 3;
 				invincible = 60;
 				screenshake(10,8,0);
+				global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
+				room_restart()
 			}			
 
 		break;
@@ -103,6 +105,7 @@ ltimeout	-= 1;
 rtimeout	-= 1; 
 bufjump		-= 1;
 onfloor		-= 1;
+show_debug_message(DJA)
 
 motion(	keyboard_check(GAME.keyright),
 		keyboard_check(GAME.keyleft) ,

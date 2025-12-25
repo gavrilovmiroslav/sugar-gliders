@@ -112,7 +112,8 @@ enum states {
 	wall,
 	run,
 	fall,
-	jump
+	jump,
+	whip
 }
 
 ex_state = states.idle

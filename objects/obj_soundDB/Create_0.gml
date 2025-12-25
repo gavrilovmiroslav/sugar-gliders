@@ -26,4 +26,6 @@ PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = 1)
 	return audio_play_sound(soundArray[randomIndex], priority, loop, gain);
 }
 
-global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
+if music == noone {
+	music = global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
+}

@@ -3,7 +3,13 @@
 
 if (owner != noone)
 {
-	if (owner.ex_state == states.idle)
+	if (owner.ex_state == states.whip)
+	{
+		sprite_index = anim_whip;
+		x = -12 * owner.h
+		y = -10
+	}
+	else if (owner.ex_state == states.idle)
 	{
 		sprite_index = anim_idle;
 		x = -12 * owner.h

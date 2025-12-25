@@ -190,7 +190,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				if (upkeypress) {
 					vsp = jmpspd;
 					xstretch= .5; 
-					ystretch= 2;
+					ystretch= 4;
 					vrelease = 0;
 					onledge = false;
 				}

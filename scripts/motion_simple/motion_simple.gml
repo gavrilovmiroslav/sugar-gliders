@@ -42,7 +42,7 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 		}
 
 	//If jump key/////////////////////////
-	if jumpinputbuffering && ((upkeypress == 1) && free && djump = 0) {
+	if jumpinputbuffering && ((upkeypress == 1) && free && djump == 0) {
 		bufjump = 6;
 		}
 	

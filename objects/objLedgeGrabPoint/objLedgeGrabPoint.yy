@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"maskPart",
-    "path":"sprites/maskPart/maskPart.yy",
+    "name":"skull_baby",
+    "path":"sprites/skull_baby/skull_baby.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -45,9 +45,11 @@ if (floorblock != noone) {
 				y += -1;
 				djump = DJA;
 				free = 1;
-				xstretch= .2; 
+				xstretch= .2;
 				ystretch= 3;
 				invincible = 60;
+				global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
+				room_restart()
 			}			
 
 		break;
