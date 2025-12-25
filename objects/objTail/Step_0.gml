@@ -10,6 +10,7 @@ if (size > 0 && keyboard_check_released(ord("Z")))
 	
 	var crate = instance_create_depth(x, y, 0, objCrate);
 	
+	// grab
 	with crate {
 		grabbed				= 1;
 		idd.docols			= 0;
@@ -22,6 +23,7 @@ if (size > 0 && keyboard_check_released(ord("Z")))
 		y					= objPlayer.y;
 	}
 	
+	// throw
 	with crate {
 		idd.docols			= 1;
 		idd.image_xscale	= 1;

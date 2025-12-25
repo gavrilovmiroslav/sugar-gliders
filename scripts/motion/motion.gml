@@ -25,18 +25,19 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		actionkey1press = argument9,
 		
 		actionkeycheat  = argument10;
-
-	//////////////////////////////////////
-	// WATER /////////////////////////////
-	//////////////////////////////////////
 #region
 
+	//////////////////////////////////////
+	// CHEAT /////////////////////////////
+	//////////////////////////////////////
 	if (cheating)
 	{
 		if (actionkeycheat)
 		{
 			cheating = false;
 		}
+		vsp = 0;
+		hsp = 0;
 		var cheatSpeed = 5;
 		if (rightkey)
 		{
@@ -61,6 +62,9 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		cheating = actionkeycheat;
 	}
 
+	//////////////////////////////////////
+	// WATER /////////////////////////////
+	//////////////////////////////////////
 	if (inwater = 0) && instance_position(x,y+hh-1,objWater) {
 		inwater = instance_position(x,y+hh-1,objWater);
 		grvspd = .5
@@ -138,6 +142,33 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	}
 
 	if (inwater) {
+		
+		if (cheating)
+		{
+			water_timer += delta_time;
+			show_debug_message(water_timer);
+		}
+		if (water_timer >= water_time_limit * 1000000)
+		{
+			with objTail {
+				var childrenSize = ds_list_size(children);
+				if (childrenSize > 0)
+				{
+					var child = children[| childrenSize - 1]
+					instance_destroy(child)
+					ds_list_delete(children, childrenSize - 1)
+					objPlayer.DJA = childrenSize - 1
+					global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);
+				}
+				else
+				{
+					global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
+					room_restart();	
+				}
+			}
+			water_timer = 0;
+		}
+		
 	
 		if hsp != 0 && inwater.shallows && !free {
 		
@@ -163,6 +194,10 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				jmpspd		= ijmpspd/2;
 				vsp = min(4,vsp);}
 	}
+	else
+	{
+		water_timer = 0;
+	}
 
 	prevhsp		= hsp;		
 	prevvsp		= vsp;
@@ -174,13 +209,12 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 #region
 	if CLG {
 		if (vsp >= 0) {
-	
-			var grabbedledge = collision_line(x+hw,y-hh,x+hw,y-hh-vsp,objLedgeGrabPoint,0,0);
-			if grabbedledge = noone {
-				grabbedledge = collision_line(x-hw,y-hh,x-hw,y-hh-vsp,objLedgeGrabPoint,0,0)
-			}
-	
-			if (grabbedledge != noone) {
+			
+			
+			var grabbedledge = collision_circle(x, y, hw, objLedgeGrabPoint, false, true);
+
+			alarm0 = alarm_get(0);
+			if (grabbedledge != noone && alarm0 == -1) {
 				onledge = true;
 				if grabbedledge.x > x
 				{
@@ -196,16 +230,18 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				if (x < grabbedledge.x) {rot = 15;} else {rot = -15;};
 		
 				if (upkeypress) {
-					vsp = jmpspd;
+					vsp = jmpspd * 1.3;
 					xstretch= .5; 
 					ystretch= 4;
 					vrelease = 0;
 					onledge = false;
+					alarm_set(0, 10);
 				}
 		
 				if (downkeypress) {
 					y += 4;
 					onledge = false;
+					alarm_set(0, 10);
 				}
 		
 				exit;
@@ -607,7 +643,8 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 #region
 	free = 1;
 
-	if collision_line(x-hw,y+hh,x+hw-1,y+hh,parSolid,0,0) {
+	//if collision_line(x-hw,y+hh,x+hw-1,y+hh,parSolid,0,0) {
+	if (collision_point(x, y+hh, parSolid, false, true) && alarm0 == -1) {
 	
 		if vsp > 0 {
 		
@@ -732,7 +769,8 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	        break;
 	    case -1:
 	        repeat(abs(vsp)) {
-				if !collision_line(x-hw,y-hh-1,x+hw-1,y-hh-1,parSolid,0,0) {
+				//if !collision_line(x-hw,y-hh-1,x+hw-1,y-hh-1,parSolid,0,0) {
+				if !(collision_point(x, y+hh, parSolid, false, true)) {
 					y += sign(vsp)
 				} else {vsp = 0;}
 			}

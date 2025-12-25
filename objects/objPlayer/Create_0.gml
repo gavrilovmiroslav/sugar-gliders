@@ -29,6 +29,7 @@ gndfrc		= 2;		//Friction (speed that you slow down each frame while not pressing
 maxslp		= 1;		//Highest slope you can climb in pixels.
 
 state		= 0;		//Part of the [F]inite [S]tate [M]achine that this engine uses to determine what the player is doing (and what they can do).
+lastState   = 0         //To detect change of state from previous
 
 vspclamp	= 24;		//Maximum vertical speed
 hspclamp	= 24;		//Maximum horizontal speed
@@ -59,6 +60,7 @@ laddercd	= 0;		//Cooldown before we can grab the last ladder
 ladderspd	= 8;		//Maximum speed the player can climb on ladders
 
 onledge     = false;    //Whether we are on a ledge
+alarm_set(0, -1);       //Initiating ledge jump-off timer as stopped
 
 inwater		= 0;		//Whether the player is in water
 onslope		= 0;		//Whether the player is on a slope
@@ -117,3 +119,7 @@ enum states {
 }
 
 ex_state = states.idle
+
+//WATER DEATH VARIABLES
+water_timer = 0;
+water_time_limit = 3; //seconds

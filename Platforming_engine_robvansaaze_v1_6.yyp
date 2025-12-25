@@ -47,7 +47,13 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_heathaze-1.0.0","name":"io.gamemaker.gm_filter_heathaze-1.0.0","path":"io.gamemaker.gm_filter_heathaze-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_ripples-1.0.0","name":"io.gamemaker.gm_filter_ripples-1.0.0","path":"io.gamemaker.gm_filter_ripples-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_gradient-1.0.0","name":"io.gamemaker.gm_filter_gradient-1.0.0","path":"io.gamemaker.gm_filter_gradient-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_blocks-1.0.0","name":"io.gamemaker.gm_filter_blocks-1.0.0","path":"io.gamemaker.gm_filter_blocks-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"About.txt","CopyToMask":-1,"filePath":"datafiles","name":"About.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"License.txt","CopyToMask":-1,"filePath":"datafiles","name":"License.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -100,6 +106,7 @@
     {"id":{"name":"parUnit","path":"objects/parUnit/parUnit.yy",},},
     {"id":{"name":"rmMain_1","path":"rooms/rmMain_1/rmMain_1.yy",},},
     {"id":{"name":"rmMain","path":"rooms/rmMain/rmMain.yy",},},
+    {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"_motion_climbing","path":"scripts/_motion_climbing/_motion_climbing.yy",},},
     {"id":{"name":"_motion_ledge","path":"scripts/_motion_ledge/_motion_ledge.yy",},},
     {"id":{"name":"_motion_rope","path":"scripts/_motion_rope/_motion_rope.yy",},},
