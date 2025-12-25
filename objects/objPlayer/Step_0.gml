@@ -169,3 +169,12 @@ if (hsp > 0  && vsp != 0) {animstate = 5;}
 
 }
 
+
+//////////////////////////////////////
+//DEBUG///////////////////////////////
+//////////////////////////////////////
+if (lastState != state)
+{
+	lastState = state;
+	show_debug_message(state);
+}
