@@ -140,6 +140,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	if (inwater) {
 		
 		water_timer += delta_time;
+		show_debug_message(water_timer);
 		if (water_timer >= water_time_limit * 1000000)
 		{
 			global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
@@ -170,6 +171,10 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				maxspd		= imaxspd/2;
 				jmpspd		= ijmpspd/2;
 				vsp = min(4,vsp);}
+	}
+	else
+	{
+		water_timer = 0;
 	}
 
 	prevhsp		= hsp;		
