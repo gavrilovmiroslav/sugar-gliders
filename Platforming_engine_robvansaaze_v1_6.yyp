@@ -103,6 +103,7 @@
     {"id":{"name":"parSolid","path":"objects/parSolid/parSolid.yy",},},
     {"id":{"name":"parUnit","path":"objects/parUnit/parUnit.yy",},},
     {"id":{"name":"rmMain_1","path":"rooms/rmMain_1/rmMain_1.yy",},},
+    {"id":{"name":"rmMain_2","path":"rooms/rmMain_2/rmMain_2.yy",},},
     {"id":{"name":"rmMain","path":"rooms/rmMain/rmMain.yy",},},
     {"id":{"name":"_motion_climbing","path":"scripts/_motion_climbing/_motion_climbing.yy",},},
     {"id":{"name":"_motion_ledge","path":"scripts/_motion_ledge/_motion_ledge.yy",},},
@@ -253,6 +254,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rmMain_1","path":"rooms/rmMain_1/rmMain_1.yy",},},
     {"roomId":{"name":"rmMain","path":"rooms/rmMain/rmMain.yy",},},
+    {"roomId":{"name":"rmMain_2","path":"rooms/rmMain_2/rmMain_2.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
