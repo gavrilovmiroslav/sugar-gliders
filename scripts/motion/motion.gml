@@ -37,6 +37,8 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		{
 			cheating = false;
 		}
+		vsp = 0;
+		hsp = 0;
 		var cheatSpeed = 5;
 		if (rightkey)
 		{
