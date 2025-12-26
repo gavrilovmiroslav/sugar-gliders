@@ -36,15 +36,21 @@ draw_set_halign(fa_center);
 draw_set_colour(c_white);
 draw_text(10 * xt + 5 * sin(current_time / 100), 432, "Thank you for playing SUGAR GLIDERS");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 0.2), 432 + lHeight, "a game about blessings in disguise.");
-draw_text(10 * xt + 5 * sin(current_time / 100 + 0.4), 432 + lHeight * 3, "Created in two days by:");
+draw_text(10 * xt + 5 * sin(current_time / 100 + 0.4), 432 + lHeight * 3, "Created in two days. Team:");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 0.4), 432 + lHeight * 4, "Milica Todorovic");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 0.6), 432 + lHeight * 5, "Darinka Zobenica");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 0.8), 432 + lHeight * 6, "Aleksandar Zdravkovic");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 1.0), 432 + lHeight * 7, "Miroslav Gavrilov");
 draw_text(10 * xt + 5 * sin(current_time / 100 + 1.4), 432 + lHeight * 9, "Be kind to one another.");
+
+draw_text(30 * xt + 5 * sin(current_time / 100 + 0.4), 432 + lHeight * 2, "Special thanks to");
+draw_text(30 * xt + 5 * sin(current_time / 100 + 0.6), 432 + lHeight * 3, "Ilija Pantelic (metal song cover) and");
+draw_text(30 * xt + 5 * sin(current_time / 100 + 0.8), 432 + lHeight * 4, "Aleksandra Blagojevic (*rocks* and *attitude*)");
+draw_text(30 * xt + 5 * sin(current_time / 100 + 0.8), 432 + lHeight * 5, "and many others who became sugar gliders ;)");
+
 draw_set_halign(fa_left);
 
-draw_text(900, 600, "[ESC] to exit.");
+draw_text(1000, 650, "[ESC] to exit.");
 if (keyboard_check_released(vk_escape))
 {
 	game_end(0);

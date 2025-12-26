@@ -2,6 +2,8 @@
 //CAMERA SETTINGS/////////////////////
 //////////////////////////////////////
 //Vars
+window_set_caption("Sugar Gliders")
+
 xs		= x;			//X position to look at
 ys		= y;			//Y position to look at
 tar		= objPlayer;	//Target to follow

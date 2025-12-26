@@ -20,7 +20,7 @@ randomise();
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
 
 
-#macro DEFAULT_VOLUME 0.1
+#macro DEFAULT_VOLUME 0.5
 
 StartWaterEffect = function()
 {
@@ -73,6 +73,12 @@ PlayBGMusic = function()
 		underwaterBGMusicID = audio_play_sound(jump_and_run___tropics_UNDERWATER, 10, true, 0);
 }
 
+PlayCreditsMusic = function()
+{
+	audio_stop_all()
+	audio_play_sound(jump_higher_run_faster, 10, true, 0.5);
+}
+
 PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = DEFAULT_VOLUME)
 {
 	arrLength = array_length(soundArray);
@@ -90,5 +96,3 @@ audio_set_master_gain(0, 0.5)
 //if music == noone {
 //	music = global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
 //}
-
-//PlayBGMusic();

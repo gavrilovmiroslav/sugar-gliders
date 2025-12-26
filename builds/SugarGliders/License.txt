@@ -1,0 +1,8 @@
+This product is licensed under the following terms:
+
+You are allowed to adapt this work for personal or commercial purposes.
+You are NOT allowed to redistribute this work or parts of it (adapted or left in its original state) as an open source product. 
+You ARE allowed to redistribute this work or parts of it (adapted or left in its original state) if you ENSURE that your product is closed source and can NOT be reverse engineered.
+You MUST give credit if you use and/or redistribute this work. The following must be present within your product in an unobscured way (beit credits, title screen or other): "Rob van Saaze", "www.robvansaaze.nl" and "@robvansaaze". These are my name, website url and twitter handle respectively. Credit me for either "base platforming engine", "additional programming" or something similar.
+I can NOT be held liable for the consequences of using this work.
+I do NOT offer warranty for this product.
