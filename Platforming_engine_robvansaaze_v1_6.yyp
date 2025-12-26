@@ -78,6 +78,7 @@
     {"id":{"name":"objCrateCollision","path":"objects/objCrateCollision/objCrateCollision.yy",},},
     {"id":{"name":"Object33","path":"objects/Object33/Object33.yy",},},
     {"id":{"name":"objFallingBlock","path":"objects/objFallingBlock/objFallingBlock.yy",},},
+    {"id":{"name":"objFate","path":"objects/objFate/objFate.yy",},},
     {"id":{"name":"objFrag","path":"objects/objFrag/objFrag.yy",},},
     {"id":{"name":"objGrass","path":"objects/objGrass/objGrass.yy",},},
     {"id":{"name":"objJt","path":"objects/objJt/objJt.yy",},},
