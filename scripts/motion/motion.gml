@@ -153,7 +153,6 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 					var child = children[| childrenSize - 1]
 					instance_destroy(child)
 					ds_list_delete(children, childrenSize - 1)
-					objPlayer.DJA = childrenSize - 1
 					global.soundDB.PlayRandomSplatSound();
 				}
 				else

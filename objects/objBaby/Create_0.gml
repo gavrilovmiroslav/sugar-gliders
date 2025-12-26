@@ -6,4 +6,3 @@ mother = 1
 
 ds_list_add(owner.children, self)
 index = ds_list_size(owner.children) - 1
-objPlayer.DJA = index + 1

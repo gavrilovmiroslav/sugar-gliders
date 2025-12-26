@@ -6,7 +6,6 @@ if (size > 0 && keyboard_check_released(ord("Z")))
 	var child = children[| size - 1]
 	instance_destroy(child)
 	ds_list_delete(children, size - 1)
-	objPlayer.DJA = size - 1
 	
 	var crate = instance_create_depth(x, y, 0, objCrate);
 	
