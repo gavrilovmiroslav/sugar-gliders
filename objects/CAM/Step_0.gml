@@ -21,7 +21,7 @@ case 0:
 break;
 
 case 1:		
-	xs -= (xs-tar.x)*camspd;
+	//xs -= (xs-tar.x)*camspd;
 	ys -= (ys-tar.y)*camspd;
 
 	camera_set_view_pos(cam1,xs-(zoom/2)+ssx,ys-((zoom/2)/aspr)+ssy);
@@ -29,7 +29,7 @@ break;
 
 case 2:
 	camxadd -= (camxadd-(objPlayer.hsp*20))*.05
-	xs -= (xs-(tar.x+camxadd))*camspd;
+	//xs -= (xs-(tar.x+camxadd))*camspd;
 	ys -= (ys-(tar.y))*camspd;
 
 	camera_set_view_pos(cam1,xs-(zoom/2)+ssx,ys-((zoom/2)/aspr)+ssy);

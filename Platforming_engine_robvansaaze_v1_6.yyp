@@ -48,7 +48,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"About.txt","CopyToMask":-1,"filePath":"datafiles","name":"About.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"License.txt","CopyToMask":-1,"filePath":"datafiles","name":"License.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

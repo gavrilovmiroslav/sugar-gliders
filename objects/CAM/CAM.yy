@@ -37,5 +37,5 @@
     "path":"sprites/icoEye/icoEye.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
