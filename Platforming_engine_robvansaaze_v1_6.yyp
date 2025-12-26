@@ -51,6 +51,7 @@
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_vignette-1.0.0","name":"io.gamemaker.gm_filter_vignette-1.0.0","path":"io.gamemaker.gm_filter_vignette-1.0.0.yyp",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"About.txt","CopyToMask":-1,"filePath":"datafiles","name":"About.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -77,6 +78,7 @@
     {"id":{"name":"objCrate","path":"objects/objCrate/objCrate.yy",},},
     {"id":{"name":"objCrateCollision","path":"objects/objCrateCollision/objCrateCollision.yy",},},
     {"id":{"name":"Object33","path":"objects/Object33/Object33.yy",},},
+    {"id":{"name":"objEndgame","path":"objects/objEndgame/objEndgame.yy",},},
     {"id":{"name":"objFallingBlock","path":"objects/objFallingBlock/objFallingBlock.yy",},},
     {"id":{"name":"objFate","path":"objects/objFate/objFate.yy",},},
     {"id":{"name":"objFateDraw","path":"objects/objFateDraw/objFateDraw.yy",},},
@@ -193,6 +195,12 @@
     {"id":{"name":"maskPlayer","path":"sprites/maskPlayer/maskPlayer.yy",},},
     {"id":{"name":"maskSpike","path":"sprites/maskSpike/maskSpike.yy",},},
     {"id":{"name":"maskTopLeft","path":"sprites/maskTopLeft/maskTopLeft.yy",},},
+    {"id":{"name":"parallax1","path":"sprites/parallax1/parallax1.yy",},},
+    {"id":{"name":"parallax2","path":"sprites/parallax2/parallax2.yy",},},
+    {"id":{"name":"parallax3","path":"sprites/parallax3/parallax3.yy",},},
+    {"id":{"name":"parallax4","path":"sprites/parallax4/parallax4.yy",},},
+    {"id":{"name":"parallax5","path":"sprites/parallax5/parallax5.yy",},},
+    {"id":{"name":"parallax6","path":"sprites/parallax6/parallax6.yy",},},
     {"id":{"name":"rock_block_0000_rock16_copy","path":"sprites/rock_block_0000_rock16_copy/rock_block_0000_rock16_copy.yy",},},
     {"id":{"name":"rock_block_0001_rock9_copy","path":"sprites/rock_block_0001_rock9_copy/rock_block_0001_rock9_copy.yy",},},
     {"id":{"name":"rock_block_0002_Group_1_copy","path":"sprites/rock_block_0002_Group_1_copy/rock_block_0002_Group_1_copy.yy",},},

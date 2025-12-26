@@ -54,8 +54,7 @@ if (floorblock != noone) {
 				invincible = 60;
 				screenshake(10,8,0);
 				global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
-				show_debug_message("SPIKE DEATH");
-				room_restart()
+				alarm_set(11, 10)
 			}			
 
 		break;

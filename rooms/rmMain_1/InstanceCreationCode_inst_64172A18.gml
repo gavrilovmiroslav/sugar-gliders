@@ -1,0 +1,1 @@
+text = "Well that was silly.";

@@ -335,7 +335,8 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 		global.soundDB.PlayRandomSplatSound();
 		repeat(10) {part_particles_create(GAME.partSysReg,x+irandom_range(-hw,hw),y+(hh*1.5),GAME.ptLooseGroundHigh,1);}
 
-		instance_create_depth(x, y, 0, objLedgeGrabPoint)
+		ds_list_add(objFate.killed, self.name);
+		instance_create_layer(x, y, "Instances", objLedgeGrabPoint)
 		instance_destroy(self)
 	}
 }

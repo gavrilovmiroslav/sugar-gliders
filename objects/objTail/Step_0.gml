@@ -7,7 +7,7 @@ if (size > 0 && keyboard_check_released(ord("Z")))
 	instance_destroy(child)
 	ds_list_delete(children, size - 1)
 	
-	var crate = instance_create_depth(x, y, 0, objCrate);
+	var crate = instance_create_layer(x, y, "Instances", objCrate, { name: child.name });
 	
 	with crate {
 		grabbed				= 1;

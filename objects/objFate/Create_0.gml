@@ -1,5 +1,7 @@
 global.fates = id;
 
+killed = ds_list_create()
+
 randomise();
 
 fate_arr = ["This little sugar glider would've made a fortune on crypto scams.",
@@ -96,20 +98,17 @@ name_arr = array_shuffle(name_arr);
 
 GenerateNewFate = function()
 {	
-	ds_list_add(generated_fates, {
+	var f = {
 		name: name_arr[name_index],
 		fate: fate_arr[fate_index]
-	});
+	};
+	ds_list_add(generated_fates, f);
 	
 	name_index++;
 	fate_index++;
+	
+	return f;
 }
-
-GenerateNewFate();
-GenerateNewFate();
-GenerateNewFate();
-GenerateNewFate();
-GenerateNewFate();
 
 for (var i = 0; i < ds_list_size(generated_fates); i = i + 1)
 {

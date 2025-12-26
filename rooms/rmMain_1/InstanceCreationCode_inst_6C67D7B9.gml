@@ -1,0 +1,1 @@
+text = "[Arrows] to move, [X] to carry/toss, [Z] to ...";

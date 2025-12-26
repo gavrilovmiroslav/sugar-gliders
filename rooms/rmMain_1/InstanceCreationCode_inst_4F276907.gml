@@ -1,0 +1,1 @@
+text = "WOW! Achievement got!";

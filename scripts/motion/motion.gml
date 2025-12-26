@@ -163,7 +163,9 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				else
 				{
 					global.soundDB.PlayRandomSound(global.soundDB.death_sounds);
-					room_restart();	
+					with objPlayer {
+						alarm_set(11, 12)
+					}
 				}
 			}
 			water_timer = 0;
