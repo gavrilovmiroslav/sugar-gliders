@@ -142,6 +142,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 	}
 
 	if (inwater) {
+		global.soundDB.StartWaterEffect();
 		
 		if (!cheating)
 		{
@@ -191,6 +192,11 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 				maxspd		= imaxspd/2;
 				jmpspd		= ijmpspd/2;
 				vsp = min(4,vsp);}
+	}
+	else
+	{
+		water_timer = 0;
+		global.soundDB.EndWatterEffect();
 	}
 
 	prevhsp		= hsp;		

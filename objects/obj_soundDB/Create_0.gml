@@ -9,6 +9,10 @@ death_sounds = [Death_6];
 swap_timer = 0.0;
 originalBGMusicID = -1;
 ilijaBGMusicID = -1;
+underwaterBGMusicID = -1;
+underwaterEffectID = -1;
+
+isPlayingUnderwater = false;
 
 //irandom will return the same results on each new run, so we have to call 'randomize' once the game starts
 randomise();
@@ -16,6 +20,31 @@ randomise();
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
 
 #macro DEFAULT_VOLUME 1
+
+StartWaterEffect = function()
+{
+	if (isPlayingUnderwater)
+		return;
+		
+	isPlayingUnderwater = true;
+	audio_sound_gain(originalBGMusicID, 0, 200);
+	audio_sound_gain(underwaterBGMusicID, 0.5, 200);
+	if (audio_is_playing(underwaterEffectID))
+		audio_sound_gain(underwaterEffectID, 0.5, 200);
+	else
+		underwaterEffectID = audio_play_sound(underwater_ambience, 10, true, 0.5);
+}
+
+EndWatterEffect = function()
+{
+	if (!isPlayingUnderwater)
+		return;
+	
+	isPlayingUnderwater = false;
+	audio_sound_gain(underwaterEffectID, 0, 200);
+	audio_sound_gain(originalBGMusicID, 0.5, 200);
+	audio_sound_gain(underwaterBGMusicID, 0, 200);
+}
 
 PlayRandomSplatSound = function(playIlija = true)
 {
@@ -33,8 +62,14 @@ PlayJumpSound = function()
 
 PlayBGMusic = function()
 {
-	originalBGMusicID = audio_play_sound(jump_and_run___tropics, 10, true, 0.5);
-	ilijaBGMusicID = audio_play_sound(ilija, 10,true,0);
+	if (!audio_is_playing(originalBGMusicID))
+		originalBGMusicID = audio_play_sound(jump_and_run___tropics, 10, true, 0.5);
+		
+	if (!audio_is_playing(ilijaBGMusicID))
+		ilijaBGMusicID = audio_play_sound(ilija, 10,true,0);
+		
+	if (!audio_is_playing(underwaterBGMusicID))
+		underwaterBGMusicID = audio_play_sound(jump_and_run___tropics_UNDERWATER, 10, true, 0);
 }
 
 PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = DEFAULT_VOLUME)
