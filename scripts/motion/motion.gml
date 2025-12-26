@@ -515,10 +515,12 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		ystretch= 2;
 		onfloor = 1;
 		vrelease = 0;
+		global.soundDB.PlayJumpSound();
 	
 		//If this was a buffered jump, take some extra measures
 	#region
 		if bufjump > 0 {
+			
 			djump = DJA;
 			bufjump = 0;
 			part_type_colour1(GAME.ptLooseGroundHigh,floorcolor);
@@ -566,6 +568,8 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 		bufjump = 0;
 		djump  -= 1;
 		vrelease = 0;
+		
+		global.soundDB.PlayJumpSound();
 	
 		part_type_colour1(GAME.ptGeneralPurpose,c_white)
 		repeat(6) {part_particles_create(GAME.partSysReg,x+irandom_range(-width,width),y,GAME.ptGeneralPurpose,1)}

@@ -24,6 +24,13 @@ PlayRandomSplatSound = function(playIlija = true)
 		event_user(0);
 }
 
+PlayJumpSound = function()
+{
+	var rpitch = random(1.5) + 0.5;
+	var sound_instance = audio_play_sound(jump, 10, false, DEFAULT_VOLUME);
+	audio_sound_pitch(sound_instance, rpitch);
+}
+
 PlayBGMusic = function()
 {
 	originalBGMusicID = audio_play_sound(jump_and_run___tropics, 10, true, 0.5);

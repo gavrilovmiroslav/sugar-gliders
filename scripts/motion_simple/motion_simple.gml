@@ -52,7 +52,6 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 		xstretch= .5; 
 		ystretch= 2;
 		onfloor = 1;
-	
 		//If this was a buffered jump, take some extra measures
 	#region
 		if bufjump > 0 {
@@ -152,7 +151,6 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 		free	= 0;
 		vsp		= 0;
 		}
-
 	}
 
 	if (downkey) {
