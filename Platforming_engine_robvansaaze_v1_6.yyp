@@ -255,8 +255,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rmMain_2","path":"rooms/rmMain_2/rmMain_2.yy",},},
     {"roomId":{"name":"rmMain_1","path":"rooms/rmMain_1/rmMain_1.yy",},},
+    {"roomId":{"name":"rmMain_2","path":"rooms/rmMain_2/rmMain_2.yy",},},
     {"roomId":{"name":"rmMain","path":"rooms/rmMain/rmMain.yy",},},
   ],
   "templateType":null,

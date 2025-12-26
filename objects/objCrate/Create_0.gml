@@ -3,7 +3,7 @@
 //////////////////////////////////////
 //SCE			= true;		//Whether to use [S]hort [C]ircuit [E]valuation when performing movement. This improves performance (especially with many units). 
 CDJ			= false;		//Whether we [C]an [D]ouble [J]ump
-DJA			= 1;			//The [D]ouble [J]ump [A]mount, 0 means no double jumps, 1 equals a single double jump, 2 means three jumps etc.
+DJA			= 0;			//The [D]ouble [J]ump [A]mount, 0 means no double jumps, 1 equals a single double jump, 2 means three jumps etc.
 
 
 //////////////////////////////////////

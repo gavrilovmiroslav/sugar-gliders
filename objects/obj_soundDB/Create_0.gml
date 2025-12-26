@@ -19,7 +19,7 @@ randomise();
 
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
 
-#macro DEFAULT_VOLUME 1
+#macro DEFAULT_VOLUME 0.2
 
 StartWaterEffect = function()
 {
@@ -85,8 +85,9 @@ PlayRandomSound = function(soundArray, loop = false, priority = 1, gain = DEFAUL
 	return audio_play_sound(soundArray[randomIndex], priority, loop, gain);
 }
 
+audio_set_master_gain(0, 0.5)
 //if music == noone {
 //	music = global.soundDB.PlayRandomSound(global.soundDB.bg_music, true);
 //}
 
-PlayBGMusic();
+//PlayBGMusic();
