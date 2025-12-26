@@ -16,8 +16,8 @@ if (floorblock != noone) {
 		case 3452415:
 			//Spring
 			if (!collision_line(x-hw,y-hh-1+jmpspd,x+hw-1,y-hh-1+jmpspd,parSolid,0,0)) {
-				vsp = jmpspd*1.5;
-				y += jmpspd*1.5;
+				vsp = jmpspd*7;
+				y += jmpspd*7;
 				djump = DJA;
 				free = 1;
 				xstretch= .2; 
