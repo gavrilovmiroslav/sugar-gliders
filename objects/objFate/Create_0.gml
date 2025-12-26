@@ -99,8 +99,8 @@ name_arr = array_shuffle(name_arr);
 GenerateNewFate = function()
 {	
 	var f = {
-		name: name_arr[name_index],
-		fate: fate_arr[fate_index]
+		name: name_arr[name_index % array_length(name_arr)],
+		fate: fate_arr[fate_index % array_length(fate_arr)]
 	};
 	ds_list_add(generated_fates, f);
 	
