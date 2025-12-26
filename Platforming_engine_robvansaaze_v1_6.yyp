@@ -164,6 +164,7 @@
     {"id":{"name":"cat01_run","path":"sprites/cat01_run/cat01_run.yy",},},
     {"id":{"name":"cat01_wallclimb","path":"sprites/cat01_wallclimb/cat01_wallclimb.yy",},},
     {"id":{"name":"cat01_wallgrab","path":"sprites/cat01_wallgrab/cat01_wallgrab.yy",},},
+    {"id":{"name":"cikice","path":"sprites/cikice/cikice.yy",},},
     {"id":{"name":"glider_land","path":"sprites/glider_land/glider_land.yy",},},
     {"id":{"name":"glider01_gliding","path":"sprites/glider01_gliding/glider01_gliding.yy",},},
     {"id":{"name":"glider01_idle_blink","path":"sprites/glider01_idle_blink/glider01_idle_blink.yy",},},

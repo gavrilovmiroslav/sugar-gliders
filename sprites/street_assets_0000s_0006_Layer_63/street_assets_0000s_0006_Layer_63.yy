@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"street_assets_0000s_0006_Layer_63",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":5,
   "bbox_left":0,
   "bbox_right":27,
   "bbox_top":0,
