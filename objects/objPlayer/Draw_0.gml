@@ -87,3 +87,27 @@ if ((invincible mod 10) < 5)								 //If the player is not invicible
 		//the matrix that we created above already moves the player to the right x and y position.
 
 matrix_set(matrix_world,mat_ident);							 //Reset the world matrix
+
+
+//DRAW KIDS TRAJECTORY
+if (ds_list_size(objTail.children) > 0)
+{
+		
+		var steps = 10;
+		var xd = (32+abs(objPlayer.hsp))*objPlayer.flip;
+		var yd = 1;
+		
+		var xst =x;
+		var yst = y;
+		
+		for (var i = 0; i < steps; i += 1)
+		{
+			if (place_meeting(xst, yst, [objSolid, objSpikes]))
+				break;
+				
+			draw_line(xst, yst, xst + xd, yst + yd);
+			xst = xst + xd;
+			yst = yst + yd;
+			yd = yd+2;
+		}
+}
