@@ -23,7 +23,7 @@
   ],
   "name":"ledge59",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Textures",
     "path":"folders/Sprites/Textures.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":18,
     "yorigin":0,
   },
   "swatchColours":null,
