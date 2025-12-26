@@ -76,6 +76,9 @@ animstate	= 0;		//Used to easily get the player's animation state
 						// 4 = Moving left in air
 						// 5 = moving right in air
 						// You can easily add extra animation states by checking variables in the step event
+						
+water_timer = 0;
+water_time_limit = 3;//seconds
 
 //Memory ([i]nitial) variables for different floor types
 #region
