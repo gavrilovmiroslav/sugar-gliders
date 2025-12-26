@@ -139,7 +139,7 @@ function motion(argument0, argument1, argument2, argument3, argument4, argument5
 
 	if (inwater) {
 		
-		if (cheating)
+		if (!cheating)
 		{
 			water_timer += delta_time;
 			show_debug_message(water_timer);
