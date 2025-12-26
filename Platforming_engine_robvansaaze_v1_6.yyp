@@ -127,6 +127,7 @@
     {"id":{"name":"crunch","path":"sounds/crunch/crunch.yy",},},
     {"id":{"name":"Death_6","path":"sounds/Death_6/Death_6.yy",},},
     {"id":{"name":"glider_splat","path":"sounds/glider_splat/glider_splat.yy",},},
+    {"id":{"name":"ilija","path":"sounds/ilija/ilija.yy",},},
     {"id":{"name":"jump_and_run___tropics","path":"sounds/jump_and_run___tropics/jump_and_run___tropics.yy",},},
     {"id":{"name":"jump_higher_run_faster","path":"sounds/jump_higher_run_faster/jump_higher_run_faster.yy",},},
     {"id":{"name":"puppy_whine","path":"sounds/puppy_whine/puppy_whine.yy",},},

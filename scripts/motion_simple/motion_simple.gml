@@ -334,7 +334,7 @@ function motion_simple(argument0, argument1, argument2, argument3, argument4, ar
 	if (hit) 
 	{
 		audio_stop_sound(whine_sound_id);
-		global.soundDB.PlayRandomSound(global.soundDB.splat_sounds);
+		global.soundDB.PlayRandomSplatSound();
 		repeat(10) {part_particles_create(GAME.partSysReg,x+irandom_range(-hw,hw),y+(hh*1.5),GAME.ptLooseGroundHigh,1);}
 
 		instance_create_depth(x, y, 0, objLedgeGrabPoint)
