@@ -10,9 +10,7 @@ Team:
   Miroslav Gavrilov
 
 All resources have been licensed as free to use in both free and commercial projects.
-No generative AI has been used for this game. F*ck AI. This tiredness is what makes it worth it.
-
-Built using Game Maker Studio 2 and Rob van Saaze's Platformer Engine.
+No generative AI has been used for this game. Fuck AI. This tiredness is what makes it worth it.
 
 Enjoy the game and be kind to one another!
 	
