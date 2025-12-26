@@ -15,6 +15,8 @@ randomise();
 
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
 
+#macro DEFAULT_VOLUME 1
+
 PlayRandomSplatSound = function()
 {
 	PlayRandomSound(splat_sounds);
