@@ -1,3 +1,5 @@
+global.fates = id;
+
 randomise();
 
 fate_arr = ["This little sugar glider would've made a fortune on crypto scams.",
@@ -113,3 +115,4 @@ for (var i = 0; i < ds_list_size(generated_fates); i = i + 1)
 {
 	show_debug_message(ds_list_find_value(generated_fates, i));
 }
+

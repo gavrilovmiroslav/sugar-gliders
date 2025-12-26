@@ -19,7 +19,8 @@ randomise();
 
 //Use this to play a random sound from an array - returns sound ID so we can stop the sound later
 
-#macro DEFAULT_VOLUME 0.2
+
+#macro DEFAULT_VOLUME 0.1
 
 StartWaterEffect = function()
 {

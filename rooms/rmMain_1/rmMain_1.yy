@@ -91,11 +91,13 @@
     {"name":"inst_1A000BF5","path":"rooms/rmMain_1/rmMain_1.yy",},
     {"name":"inst_5C6900E1","path":"rooms/rmMain_1/rmMain_1.yy",},
     {"name":"inst_52E4C311","path":"rooms/rmMain_1/rmMain_1.yy",},
+    {"name":"inst_51F25ADE","path":"rooms/rmMain_1/rmMain_1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_front","depth":0,"effectEnabled":true,"effectType":"_filter_underwater","gridX":36,"gridY":36,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_29425E8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29425E8E","objectId":{"name":"objRisingWater","path":"objects/objRisingWater/objRisingWater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":106.0,"scaleY":57.0,"x":-1152.0,"y":828.0,},
+        {"$GMRInstance":"v4","%Name":"inst_51F25ADE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51F25ADE","objectId":{"name":"objFate","path":"objects/objFate/objFate.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-252.0,"y":108.0,},
       ],"layers":[],"name":"Instances_front","properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},
