@@ -17,10 +17,11 @@ randomise();
 
 #macro DEFAULT_VOLUME 1
 
-PlayRandomSplatSound = function()
+PlayRandomSplatSound = function(playIlija = true)
 {
 	PlayRandomSound(splat_sounds);
-	event_user(0);
+	if (playIlija)
+		event_user(0);
 }
 
 PlayBGMusic = function()
